@@ -14,8 +14,6 @@ header img{height: 60px;}
 header nav ul{display: flex;
     list-style: none;}
     
-    
-
 header nav li a{text-decoration: none;color:white;padding: 0 12px;}
 li{border-right:1px solid white;}
 li:last-child{border-right:0px;}
@@ -23,12 +21,7 @@ li:hover{background-color:pink;}
 
 header nav{display: flex; align-items: center;}
 
-
-
-
 #hero{background-image:url(../images/sam2.jpg);
-    height:90vh;
-    width:100%;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
@@ -39,30 +32,15 @@ header nav{display: flex; align-items: center;}
 
 #hero h1{color:white; font: size 80px;margin-bottom: 20px;}
 
-@media (max-widht:768px){header{flex-direction: column;
-    height:auto;
-    align-items: center;}
-    header nav li a{text-decoration: none;color:white;font-size:x-small;}
-    header nav{display: flex; align-items:flex-start;}
-    #hero h1{font-size: 40px;}
-    #hero p{font-size: 18px ;display:flex;justify-content:center;}}
-@media (min-widht:768px) and (max-widht:1200px){header{flex-direction:column;
-    height:auto;
-    align-items: center;}
-    #hero h1{font-size: 60px;}
-    #hero p{font-size: 500px ;display:flex;justify-content:center;}}
-
-
-
 .img-carousel-custom{width:100%;height:350px;object-fit:cover;}
-
+ 
 #makeUp{font-family: 'Poppins'sans-serif 500px;background-color: blueviolet;animation-name:mk;animation-duration: 25s;}
-@keyframes mk{0%{background:yellow};50% {background:green};100% {background:pink}}
+
 
 footer{background-color:pink;height:auto;width:100%;
 display: grid;
 grid-template-areas:"footer footer footer";
-grid-template columns: repeat(3,1fr)}
+grid-template-columns: repeat(3,1fr)}
 
 .center{display:flex;justify-content: center;align-items:center; flex-direction:column;}
 .evenly{display: flex; justify-content: space-between;}
@@ -72,6 +50,21 @@ grid-template columns: repeat(3,1fr)}
 .card-img-top{height: 30%; width:auto;}
 .card{background-color:hotpink;}
 .card-body{color:white;display: flex;justify-content:center;align-items: center;flex-direction: column;animation-name:cc;animation-duration: 25s}
-@keyframes cc{0%{background:pink};50% {background:blueviolet};100% {background:violet}}
-.cart-text{display: flex;justify-content:center;align-items: center;flex-direction: column;}
 
+.cart-text{display: flex;justify-content:center;align-items: center;flex-direction: column;}
+@media (max-width:768px){header{flex-direction: column;
+    height:auto;
+    align-items: center;}
+    header nav li a{text-decoration: none;color:white;font-size:x-small;}
+    header nav{display: flex; align-items:flex-start;}
+    #hero h1{font-size: 40px;}
+    #hero p{font-size: 18px ;display:flex;justify-content:center;}}
+@media (min-width:768px) and (max-width:1200px){header{flex-direction:column;
+    height:auto;
+    align-items: center;}
+    #hero h1{font-size: 60px;}
+    #hero p{font-size: 500px ;display:flex;justify-content:center;}}
+@media (max-width:640px){header{margin:0px; padding:0px;height:auto} ul{flex-direction: column;}}
+
+@keyframes cc{0%{background:pink};50% {background:blueviolet};100% {background:violet}}
+@keyframes mk{0%{background:yellow};50% {background:green};100% {background:pink}}
