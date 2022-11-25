@@ -2,7 +2,7 @@
 padding: 0;
 font-family:'Poppins';}
 
-header{background-color:270D0F;
+header{background-color:#270D0F;
 height: 80px;
 width:100%;
 display: flex;
@@ -43,8 +43,7 @@ grid-template-areas:"footer footer footer";
 grid-template-columns: repeat(3,1fr)}
 
 .center{display:flex;justify-content: center;align-items:center; flex-direction:column;}
-.evenly{display: flex; justify-content: space-between;}
-.form{display: flex;justify-content:center;align-items: center;flex-direction: column;}
+.evenly{display: flex; justify-content: space-between;}.form{display: flex;justify-content:center;align-items: center;flex-direction: column;}
 .nolink{color: fuchsia;}
 
 .card-img-top{height: 30%; width:auto;}
@@ -63,7 +62,7 @@ grid-template-columns: repeat(3,1fr)}
     height:auto;
     align-items: center;}
     #hero h1{font-size: 60px;}
-    #hero p{font-size: 500px ;display:flex;justify-content:center;}}
+    #hero p{font-size: 100px ;display:flex;justify-content:center;}}
 @media (max-width:640px){header{margin:0px; padding:0px;height:auto} ul{flex-direction: column;}}
 
 @keyframes cc{0%{background:pink};50% {background:blueviolet};100% {background:violet}}
