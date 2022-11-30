@@ -1,0 +1,39 @@
+header {
+    background-color: #270D0F;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+img {
+    height: 60px;
+}}
+
+
+li {
+    border-right: 1px solid white;
+
+
+&:last-child {
+    border-right: 0px;
+}
+
+&:hover {
+    background-color: pink;
+}}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+ul{ display: flex;
+    list-style: none;}
+
+nav li a {
+        text-decoration: none;
+        color: white;
+        padding: 0 12px;
+    }
+    
+

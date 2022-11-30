@@ -1,0 +1,48 @@
+#makeUp {
+    font-family: 'Poppins' sans-serif 500px;
+    background-color: blueviolet;
+    animation-name: mk;
+    animation-duration: 25s;
+}
+
+
+.card {
+    background-color: hotpink;
+
+&-body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: cc;
+    animation-duration: 25s
+}
+
+&-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+&-img-top {
+    height: 30%;
+    width: auto;
+}}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin buttonColor($button-name,$bk-color,$font-color){
+    .button-#{$button-name}{border-radius: 20px;
+    padding:12px 25px;
+    font-size:30px;
+    background-color:$bk-color;color:$font-color;}
+}
+
+footer{@include buttonColor (not now, rgb(90, 90, 48), rgb(18, 18, 26));}

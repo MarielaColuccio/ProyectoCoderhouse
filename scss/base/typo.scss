@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+#hero {
+    background-image: url(../images/sam2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 25px;
+}
+
+#hero h1 {
+    color: white;
+    font-size:80px;
+    margin-bottom: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.evenly {
+    display: flex;
+    justify-content: space-between;
+}
+
